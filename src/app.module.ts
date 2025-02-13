@@ -33,13 +33,27 @@ import { UsersModule } from './users/Users.module';
     //     trustServerCertificate: true,
     //   },
     // }),
+    // TypeOrmModule.forRoot({
+    //   type: 'mssql',
+    //   host: '34.67.230.109',
+    //   port: 1433,
+    //   username: 'sqlserver', //process.env.USERNAME_MSSQL
+    //   password: 'evenhubfully123456', //process.env.PASSWORD_MSSQL
+    //   database: 'evenhubDB', //process.env.NAMEDB_MSSQL
+    //   autoLoadEntities: true,
+    //   logging: true,
+    //   // synchronize: true, ///not use production env
+    //   options: {
+    //     trustServerCertificate: true,
+    //   },
+    // }),
     TypeOrmModule.forRoot({
       type: 'mssql',
-      host: '34.67.230.109',
+      host: 'database.cf4wymoyan17.us-east-2.rds.amazonaws.com',
       port: 1433,
-      username: 'sqlserver',//process.env.USERNAME_MSSQL
-      password: 'evenhubfully123456', //process.env.PASSWORD_MSSQL
-      database: 'evenhubDB',//process.env.NAMEDB_MSSQL
+      username: 'admin', //process.env.USERNAME_MSSQL
+      password: 'Ghfshtfh69916571', //process.env.PASSWORD_MSSQL
+      database: 'evenhubDB', //process.env.NAMEDB_MSSQL
       autoLoadEntities: true,
       logging: true,
       // synchronize: true, ///not use production env
