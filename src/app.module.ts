@@ -49,7 +49,7 @@ import { UsersModule } from './users/Users.module';
     // }),
     TypeOrmModule.forRoot({
       type: 'mssql',
-      host: 'database.cf4wymoyan17.us-east-2.rds.amazonaws.com',
+      host: 'database.cf4wymoyan17.us-east-2.rds.amazonaws.com?ssl=true',
       port: 1433,
       username: 'admin', //process.env.USERNAME_MSSQL
       password: 'Ghfshtfh69916571', //process.env.PASSWORD_MSSQL
