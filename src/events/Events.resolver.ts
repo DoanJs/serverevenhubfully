@@ -1,4 +1,3 @@
-import { UseGuards } from '@nestjs/common';
 import {
   Args,
   Mutation,
@@ -7,7 +6,6 @@ import {
   ResolveField,
   Resolver,
 } from '@nestjs/graphql';
-import { GraphQLGuard } from 'src/auth/GraphQL.Guard';
 import { Event } from 'src/events/Event.model';
 import { Position } from 'src/positions/Position.model';
 import { User } from 'src/users/User.model';
@@ -18,7 +16,7 @@ import { EventConditionInput } from './type/eventCondition.input';
 import { FilterEventsData } from './type/filterEventsData.input';
 
 @Resolver(() => Event)
-@UseGuards(GraphQLGuard)
+// @UseGuards(GraphQLGuard)
 export class EventsResolver {
   constructor(private eventsService: EventsService) {}
 
